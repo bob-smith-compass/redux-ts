@@ -7,7 +7,7 @@ const App: React.FC = () => {
   return (
     <div>
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <Grid />
+        <Grid name="David"/>
     </div>
   );
 }

@@ -1,10 +1,15 @@
 import React, { Component } from 'react'
 
-export default class Grid extends Component {
+export interface HelloProps { name: string; }
+
+export default class Grid extends Component<HelloProps> {
+    constructor(props: HelloProps) {
+        super(props);
+    }
   render() {
     return (
       <div>
-        Grid
+        {this.props.name}
       </div>
     )
   }
